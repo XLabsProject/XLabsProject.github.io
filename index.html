@@ -25,11 +25,69 @@
             background: black;
             overflow: hidden;
         }
+        
+        #intro {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: black;
+            transition: opacity 1s ease-in-out;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .video-background {
+            position: relative;
+            overflow: hidden;
+            width: 100vw;
+            height: 100vh;
+        }
+        
+        .video-background iframe {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100vw;
+            height: 100vh;
+            transform: translate(-50%, -50%);
+        }
+        
+        @media (min-aspect-ratio: 16/9) {
+            .video-background iframe {
+                /* height = 100 * (9 / 16) = 56.25 */
+                height: 56.25vw;
+            }
+        }
+        
+        @media (max-aspect-ratio: 16/9) {
+            .video-background iframe {
+                /* width = 100 / (9 / 16) = 177.777777 */
+                width: 177.78vh;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <video width="100%" height="100%" autoplay muted src="./assets/iw6x.mp4" type="video/mp4"></video>
+    <div class="video-background">
+        <iframe src="https://www.youtube.com/embed/Zxnx3W-HA18?controls=0&autoplay=1&mute=1&modestbranding=1&rel=0&showinfo=0&autohide=1&cc_load_policy=1&iv_load_policy=3&showsearch=0&fs=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+
+    <video id="intro" width="100%" height="100%" autoplay muted src="./assets/iw6x.mp4" type="video/mp4"></video>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            const intro = document.querySelector("#intro");
+            intro.onended = function() {
+                intro.style.opacity = "0%";
+            };
+        });
+    </script>
 </body>
 
 </html>
