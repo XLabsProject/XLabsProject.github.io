@@ -94,7 +94,7 @@ ul {
   margin: 0;
   padding: 5;
 }
-ul li {
+ul li, ol li {
   color: #fff;
   font-size: 14px;
   font-weight: 100;
