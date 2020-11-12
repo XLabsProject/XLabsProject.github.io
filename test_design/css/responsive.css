@@ -1,0 +1,106 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+  .section-header .section-title {
+    font-size: 22px;
+  }
+  #video-area .contents h1 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    padding: 8px 0px;
+    font-size: 13px;
+  }
+  .item-boxes h4 {
+    font-size: 16px;
+  }
+  #features .box-item .text h4 {
+    font-size: 12px;
+  }
+  #features .content-left .text {
+    margin-right: 85px;
+  }
+  #features .content-right .text {
+    margin-left: 85px;
+  }
+  .subscribe-box input[type="text"] {
+    padding: 6px 10px;
+  }
+}
+@media (max-width: 640px) {
+  .section-header .section-title {
+    font-size: 30px;
+  }
+  .menu-wrap {
+    padding: 10px;
+  }
+  .icon-list a {
+    padding: 5px 0;
+  }
+  .icon-list a::before {
+    top: 5px;
+  }
+  .bg-faded {
+    background: #fff!important;
+  }
+  #video-area .contents h1 {
+    font-size: 30px;
+    line-height: 48px;
+  }
+  #features .content-right span {
+    float: none;
+  }
+  #features .content-left span {
+    float: none;
+  }
+  #features .box-item .text h4 {
+    font-size: 14px;
+  }
+  .table-left {
+    margin: 0px 0px;
+  }
+  .counters .facts-item {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .bg-faded {
+    background: #fff!important;
+  }
+  .section-header .section-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  #video-area .contents {
+    padding: 80px 0 60px;
+  }
+  #video-area .contents h1 {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .video-promo .video-promo-content h2 {
+    font-size: 18px;
+  }
+  .pricing-tables .pricing-table {
+    margin-bottom: 30px;
+  }
+  #blog .blog-item-text h3 {
+    font-size: 18px;
+  }
+  #blog .blog-item-text .meta-tags span {
+    margin-right: 5px;
+  }
+  .counters .facts-item {
+    margin-bottom: 30px;
+  }
+  #contact .section-title {
+    font-size: 22px;
+  }
+  #subscribe .sub_btn {
+    min-width: 120px;
+  }
+  .social-icons ul li a {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+  }
+}
