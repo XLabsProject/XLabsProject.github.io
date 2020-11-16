@@ -1,2 +1,2 @@
-# XLabsProject.github.io
-Source code for XLabs Website.
+# [XLabs.dev](https://xlabs.dev)
+Source code for XLabs website.
