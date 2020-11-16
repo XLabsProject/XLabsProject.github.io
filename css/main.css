@@ -29,7 +29,6 @@ a {
   border-radius: 0px;
   font-weight: 400;
   color: #fff;
-  text-transform: uppercase;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
@@ -47,6 +46,7 @@ a {
   position: relative;
   z-index: 1;
   border-radius: 4px;
+  margin: 12px;
 }
 .btn-common:hover {
   color: #4676fa;
@@ -124,7 +124,6 @@ a:not([href]):not([tabindex]):hover {
 .section-header .section-title {
   font-size: 42px;
   margin-top: 0;
-  text-transform: uppercase;
   font-weight: 100;
   color: #fff;
   position: relative;
@@ -155,7 +154,7 @@ a:not([href]):not([tabindex]):hover {
   border: 4px solid #fff;
   border-radius: 50%;
   background: #4676fa;
-  left: 27px;
+  left: 31px;
 }
 
 /* ==========================================================================
@@ -466,7 +465,6 @@ a:not([href]):not([tabindex]):hover {
 }
 #video-area .contents .btn {
   margin: 20px 10px;
-  text-transform: uppercase;
 }
 #video-area .banner_bottom_btn {
   margin-top: 40px;
