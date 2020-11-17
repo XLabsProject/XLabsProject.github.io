@@ -84,7 +84,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Anton', sans-serif;
   color: #fff;
   font-size: 40px;
   font-weight: 100;
@@ -192,6 +192,9 @@ a:not([href]):not([tabindex]):hover {
 .accordion-btn[aria-expanded="true"]:before {
  content: "-"; }
 
+#blog .blog-item-img {
+    position: relative;
+}
 /* ==========================================================================
    Blog 
    ========================================================================== */
@@ -218,6 +221,8 @@ a:not([href]):not([tabindex]):hover {
 
     #blog .blog-item-img img {
         width: 100%;
+        margin-bottom: 20px;
+        border-radius: 8px;
     }
 
     #blog .blog-item-img:before {
@@ -644,6 +649,46 @@ a:not([href]):not([tabindex]):hover {
 }
 .owl-theme .owl-controls {
   margin-top: 20px;
+}
+
+.table-of-contents {
+    float: right;
+    width: 40%;
+    background: #eee;
+    font-size: 0.8em;
+    padding: 1em 2em;
+    margin: 0 0 0.5em 0.5em;
+}
+
+    .table-of-contents ul {
+        padding: 0;
+    }
+
+    .table-of-contents li {
+        margin: 0 0 0.25em 0;
+    }
+
+    .table-of-contents a {
+        text-decoration: none;
+    }
+
+        .table-of-contents a:hover,
+        .table-of-contents a:active {
+            text-decoration: underline;
+        }
+
+h3:target {
+    animation: highlight 1s ease;
+}
+
+@keyframes highlight {
+    from {
+        background: yellow;
+    }
+
+    to {
+        background: white;
+    }
 }
 
 /* ==========================================================================
