@@ -715,11 +715,23 @@ footer {
 .youtube a:hover {
   background: #df2926;
 }
-.linkedin a {
+.linkedin a { 
   color: #007bb6;
 }
 .linkedin a:hover {
   background: #007bb6;
+}
+.github a { 
+  color: #121212;
+}
+.github a:hover {
+  background: #121212;
+}
+.discord a { 
+  color: #7289DA;
+}
+.discord a:hover {
+  background: #7289DA;
 }
 .pinterest a {
   color: #bd081c;
