@@ -1,42 +1,47 @@
-/**
- * main.js
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2014, Codrops
- * http://www.codrops.com
- */
-(function() {
+(function ($) {
+	"use strict";
 
-	var bodyEl = document.body,
-		content = document.querySelector( '.content-wrap' ),
-		openbtn = document.getElementById( 'open-button' ),
-		closebtn = document.getElementById( 'close-button' ),
-		isOpen = false;
+	$(function () {
+		var header = $(".start-style");
+		$(window).scroll(function () {
+			var scroll = $(window).scrollTop();
 
-	function init() {
-		initEvents();
-	}
+			if (scroll >= 10) {
+				header.removeClass('start-style').addClass("scroll-on");
+			} else {
+				header.removeClass("scroll-on").addClass('start-style');
+			}
+		});
+	});
 
-	function initEvents() {
-		openbtn.addEventListener( 'click', toggleMenu );
-		if( closebtn ) {
-			closebtn.addEventListener( 'click', toggleMenu );
-		}		
-	}
+	//Animation
 
-	function toggleMenu() {
-		if( isOpen ) {
-			classie.remove( bodyEl, 'show-menu' );
+	$(document).ready(function () {
+		$('body.hero-anime').removeClass('hero-anime');
+	});
+
+	//Menu On Hover
+
+	$('body').on('mouseenter mouseleave', '.nav-item', function (e) {
+		if ($(window).width() > 750) {
+			var _d = $(e.target).closest('.nav-item'); _d.addClass('show');
+			setTimeout(function () {
+				_d[_d.is(':hover') ? 'addClass' : 'removeClass']('show');
+			}, 1);
+		}
+	});
+
+	//Switch light/dark
+
+	$("#switch").on('click', function () {
+		if ($("body").hasClass("dark")) {
+			$("body").removeClass("dark");
+			$("#switch").removeClass("switched");
 		}
 		else {
-			classie.add( bodyEl, 'show-menu' );
+			$("body").addClass("dark");
+			$("#switch").addClass("switched");
 		}
-		isOpen = !isOpen;
-	}
+	});
 
-	init();
-
-})();
+})(jQuery); 
