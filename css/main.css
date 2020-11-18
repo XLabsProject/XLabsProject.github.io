@@ -685,7 +685,7 @@ h3:target {
     height: 17px;
     background-image: none;
     position: relative;
-    border-bottom: 1.5px solid #000;
+    border-bottom: 1.5px solid #FFF;
     transition: all 300ms linear;
 }
 
@@ -694,7 +694,7 @@ h3:target {
         width: 24px;
         position: absolute;
         height: 1px;
-        background-color: #000;
+        background-color: #FFF;
         top: 0;
         left: 0;
         content: '';
