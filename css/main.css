@@ -663,6 +663,7 @@ h3:target {
 .navbar-brand img {
     height: 28px;
     width: auto;
+    border-radius: 3px;
     display: block;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
