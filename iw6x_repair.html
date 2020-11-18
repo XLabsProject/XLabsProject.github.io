@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords" content="iw4x, iw6x, x labs, momo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>IW4x Server Support | X Labs</title>
+    <title>IW4x Repair Guide | X Labs</title>
     
     <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
 
@@ -70,84 +70,44 @@
       <div class="container">
         <div class="section-header"> 
             <div class="blog-item-img">
-                  <img src="img/iw4x_banner.jpg" alt="IW4x">
+                  <img src="img/iw6x_banner.png" alt="IW6x">
               </div>
-          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">IW4x SERVER <span>SUPPORT</span></h2>
+          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">IW6x REPAIR <span>GUIDE</span></h2>
           <hr class="lines wow zoomIn" data-wow-delay="0.3s">
-          <p class="section-subtitle wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Below are guides to help you setup an IW4x Server.</p>
+          <p class="section-subtitle wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">An in-depth guide on to repair a broken IW6x install.</p>
         </div>
         <div class="row">
           
- 
             <!-- Support Item Starts -->
             <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
               <div class="blog-item-text"> 
-                <h3>
-                IW4x Server Install Guide
-                </h3>
                 <h4>
                 Requirements:
                 </h4>
                   <ul>
-                    <li>The <a href="https://www.microsoft.com/en-us/download/details.aspx?id=5555">Visual C++ 2010 Redistributable Package</a> and 
-                        the <a href="https://m.majorgeeks.com/mg/get/microsoft_visual_c_2010_redistributable_package,1.html">Visual C++ 2015-2019 Redistributable Package</a> 
-                        (These are included in the IW4x Dedicated Server torrent linked below)</li>
-                    <li><a href="https://code.visualstudio.com">Visual Code</a>, <a href="https://notepad-plus-plus.org">Notepad++</a> or <a href="https://www.sublimetext.com">Sublime Text</a> 
-                         (You may use whatever editor you choose but we don't recommend Windows Notepad)
-                    </li>
-                    <li>Torrent client - (<a href="https://www.qbittorrent.org/download.php">qBittorrent</a> is recommended)</li>
-                    <li>Computer or VPS that's online 24/7 with a decent connection that has average or above specs (We strongly advise a VPS)</li>
-                    <li>Some technical knowledge / background knowledge of computers</li>    
+                    <li><a href="https://www.fosshub.com/qBittorrent.html">qBittorrent</a></li>
                   </ul>
                 <h4>
-                Server Setup
+                Getting Started:
                 </h4>
-				   <ol>
-                    <li>Download the IW4x Dedicated Server Full <a href="https://dss0.cc/alterwarez/download/iw4x_dedicated_server_full.torrent">torrent</a> and place it in a location of your choosing on your VPS or PC</li>
-				   </ol>
-                <h4>
-                Match Server Setup
-                </h4>
-                   <ol>
-						<li>Right click the DedicatedServer.bat file and go to edit with notepad++</li>
-						<li>Carefully review/edit the bat file. Game Port LAN Mode.</li>
-						<li>Save the file that you just edit.</li>
-						<li>Go to your userraw folder. Right click on server.cfg and edit with notepad++</li>
-						<li>Carefully review edit the cfg file to your liking.</li>
-						<li>Give it a hostname, Message of the day, Gametype, remove/add maps that you want on the rotate.</li>
-						<li>Save the server.cfg file that you just edit after you done. You can always go back and edit it</li>
-						<li>Forward the TCP and UDP port you put in the bat file.</li>
-						<li>Run the startserver.bat and now the server should be listed in the serverlist</li>
-				   </ol>
-                 <h4>
-                 Party Server Setup
-                 </h4>
-                   <ol>
-					<li>Right click the DedicatedLobbyServer.bat file and go to edit with Visual Studio Code or your choice of editor.</li>
-					<li>Carefully review/edit the file to your liking, Gamemode, GamePort, LAN Mode.</li>
-					<li>Save the file that you just edit after you done. You can always go back and edit it.</li>
-					<li>Go to your userraw folder. Right click on partyserver.cfg and edit with Visual Studio Code or your choice of editor.</li>
-					<li>Carefully review edit the cfg file to your liking. Give it a hostname, Message of The Day, etc.</li>
-					<li>Save the partyserver.cfg file that you just edit.</li>
-					<li>On your router, Forward the TCP and UDP port you put in +set net_port "28960" or whatever of your choice. We can't help on this as everyone's routers very different.</li>
-					<li>Run the DedicatedLobbyServer.bat and the window should open the name of your server, 0/18 players, none. Ignore any console errors that happen. As long as the server doesn't crash or error out.</li>
-					<li>The server should now be listed in the serverlist</li>
-				   </ol>
-                 <h4>
-                 Server Administration Software
-                 </h4>
-                 <p>
-                 We recommend <a href="https://github.com/RaidMax/IW4M-Admin/#iw4madmin--">IW4MAdmin</a> to control your server.  
-                 </p>
+				<ol>
+                <li>Locate your IW6x Install, and make note of the folder name and folder path (Your folder name may differ from the example below). </li>
+				<img src="img/iw6x_repair/guideRepairFolder.jpg" width="539" height="344">
+				<li>Download the following <a href="http://dss0.cc/alterwarez/download/iw6x_full_game.torrent">torrent</a> and open it with qBittorent.</li>
+				<li>Once prompted with the following screen click on the icon marked in red:</li>
+				<img src="img/iw6x_repair/guideRepairTorrent.jpg" width="568" height="380">
+				<li>Browse to the location of your mw2 folder and mark it by clicking on it once. Now click "Select Folder":</li>
+				<img src="img/iw6x_repair/guideRepairTorrent2.jpg" width="467" height="413">
+				<li><b>IMPORTANT:</b> Untick "Create Subfolder", after that hit OK to start the repair process:</li>
+				<img src="img/iw6x_repair/guideRepairTorrent3.jpg" width="539" height="344">
+				<li>The torrent client will now check your game files and re-download missing or corrupted ones:</li>
+				<img src="img/iw6x_repair/guideRepairTorrent4.jpg" >
+				<li>Once the torrent status changes to <b>Seeding</b> the repair process is complete.</li>
+				</ol>
               </div>
             </div>
             <!-- Support Item Wrapper Ends-->
 			
-            
-    
-
-          
-
           
         </div>
       </div>
