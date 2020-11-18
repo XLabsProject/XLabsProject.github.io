@@ -685,7 +685,7 @@ h3:target {
     height: 17px;
     background-image: none;
     position: relative;
-    border-bottom: 1px solid #000;
+    border-bottom: 1.5px solid #000;
     transition: all 300ms linear;
 }
 
