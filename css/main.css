@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300');
+﻿@import url('https://fonts.googleapis.com/css?family=Lato:300');
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,600');
 body {
   font-family: 'Lato', sans-serif;
@@ -581,44 +581,23 @@ a:not([href]):not([tabindex]):hover {
   margin-top: 20px;
 }
 
-.table-of-contents {
-    float: right;
-    width: 40%;
-    background: #eee;
-    font-size: 0.8em;
-    padding: 1em 2em;
-    margin: 0 0 0.5em 0.5em;
+#toc_container {
+    background: 000000 none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    display: table;
+    font-size: 95%;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: 100%;
 }
 
-    .table-of-contents ul {
-        padding: 0;
-    }
-
-    .table-of-contents li {
-        margin: 0 0 0.25em 0;
-    }
-
-    .table-of-contents a {
-        text-decoration: none;
-    }
-
-        .table-of-contents a:hover,
-        .table-of-contents a:active {
-            text-decoration: underline;
-        }
-
-h3:target {
-    animation: highlight 1s ease;
+.toc_title {
+    font-weight: 600;
+    text-align: center;
 }
 
-@keyframes highlight {
-    from {
-        background: yellow;
-    }
-
-    to {
-        background: white;
-    }
+#toc_container li, #toc_container ul, #toc_container ul li {
+    list-style: outside none none !important;
 }
 
 /* #Navigation
@@ -763,7 +742,12 @@ h3:target {
     position: relative;
     transition: all 200ms linear;
 }
-
+.nav-item:hover .dropdown-menu {
+        display: block;
+}
+.nav-item {
+    margin-bottom: 0;
+}
 /* ==========================================================================
    Footer Style
    ========================================================================== */
