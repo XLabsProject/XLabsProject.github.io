@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/nivo-lightbox.css">
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/menu_sideslide.css">
     <link rel="stylesheet" href="css/main.css">    
     <link rel="stylesheet" href="css/responsive.css">
     <script src="https://kit.fontawesome.com/72366d0c6b.js" crossorigin="anonymous"></script>
@@ -129,17 +128,17 @@
                  If you want to set up an Extinction server, you must do the following:   
                 </p>
                    <ol>
-                    <li>Add +aliensMode 1 to your .bat file or launch parameters.</li>
-				    <li>Adjust your map rotation to use the Extinction maps. Example: set sv_maprotation "gametype aliens map mp_alien_town map mp_alien_armory map mp_alien_beacon map mp_alien_dlc3 map mp_alien_last"</li>
+                    <li>Add <code>+aliensMode 1</code> to your .bat file or launch parameters.</li>
+				    <li>Adjust your map rotation to use the Extinction maps. Example: <code>set sv_maprotation "gametype aliens map mp_alien_town map mp_alien_armory map mp_alien_beacon map mp_alien_dlc3 map mp_alien_last"</code></li>
 				   </ol>
                  <h4>
                  Known Issues
                  </h4>
                    <ol>
-                    <li>Currently, g_gametype in server.cfg does not work. Game type must be set in the map rotation. Example: set sv_maprotation "gametype war map mp_prisonbreak map mp_dart </li>
+                    <li>Currently, <code>g_gametype</code> in server.cfg does not work. Game type must be set in the map rotation. Example: <code>set sv_maprotation "gametype war map mp_prisonbreak map mp_dart</code>. </li>
 				    <li>The port cannot be set manually. The server will run on the default port of 27016. Should you decide to set up a second server, the server should automatically assign itself the next highest port.</li>
-                    <li>Currently, there is a bug that crashes dedicated servers. We suspect it is related to a map change. If you are a server owner, you can try extending your matches to infinity by 
-                        doing scr_war_timelimit 0; scr_war_scorelimit 0. This will prevent TDM matches from ending and should thus be a workaround for the bug (if you are hosting other gamemodes, replace war 
+                    <li>A bug has been identified which crashes dedicated servers. We suspect it is related to a map change. If you are a server owner, you can try extending your matches to infinity by 
+                        doing <code>scr_war_timelimit 0; scr_war_scorelimit 0</code>. This will prevent TDM matches from ending and should thus be a workaround for the bug (if you are hosting other gamemodes, replace war 
                         accordingly). The X Labs team is working on a fix as fast as possible.</li>
                     <li>Other issues may exist that are not covered here. This is an initial release, so be aware that you might experience difficulties running dedicated servers for IW6x.</li>
 				   </ol>
@@ -147,7 +146,8 @@
                  Server Administration Software
                  </h4>
                  <p>
-                 There is no third-party admin tools at the moment. <a href="https://github.com/RaidMax/IW4M-Admin/#iw4madmin--">IW4MAdmin</a> will add support at a later date.  
+                 IW4madmin partially supports IW6x. Not all functions work but full support is planned as the client is further developed. For downloads and more 
+                 more information, please visit <a href="https://github.com/RaidMax/IW4M-Admin/#iw4madmin--">IW4MAdmin</a>.  
                  </p>
               </div>
             </div>
