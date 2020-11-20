@@ -289,7 +289,8 @@ pre code {
 
     #blog .blog-item-text h3 {
         line-height: 26px;
-        font-size: 20px;
+        font-size: 22px;
+        text-align: center;
         font-weight: 600;
         margin-bottom: 10px;
     }
