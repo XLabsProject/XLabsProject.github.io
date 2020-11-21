@@ -569,7 +569,7 @@ pre code {
    Testimonial Section Style
    ========================================================================== */
 #testimonial {
-  background: #f2f2f2;
+  background: #000000;
 }
 .testimonial-item {
   text-align: center;
@@ -595,7 +595,7 @@ pre code {
   letter-spacing: 1px;
   margin: 0;
   line-height: 1.5;
-  color: #999;
+  color: #fff;
 }
 .owl-theme .owl-controls .owl-page span {
   background: #4676fa;
