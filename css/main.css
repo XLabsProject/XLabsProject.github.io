@@ -489,7 +489,7 @@ pre code {
 }
 .item-boxes:hover {
   background: #4c4c4c;
-  box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 #Features {
   position: relative;
@@ -547,7 +547,7 @@ pre code {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-   Testimonial Section Style
+/*   Testimonial Section Style
    ========================================================= */
 #testimonial x-item .text p {
   font-size: 14px;
