@@ -662,6 +662,10 @@ pre code {
     padding: 0;
 }
 
+.fixed-top{
+	background-color: #333 !important;
+}
+
 .navbar-brand img {
     height: 28px;
     width: auto;
