@@ -766,7 +766,8 @@ pre code {
     transition: all 200ms linear;
 }
 .nav-item:hover .dropdown-menu {
-        display: block;
+    display: block;
+    margin: 0;
 }
 .nav-item {
     margin-bottom: 0;
