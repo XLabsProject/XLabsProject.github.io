@@ -28,7 +28,19 @@
 			setTimeout(function () {
 				_d[_d.is(':hover') ? 'addClass' : 'removeClass']('show');
 			}, 1);
-		}
+		}}
+	);
+	
+
+	// Cleanup Menus
+	$(".iw6x-menu").on('click', function () {
+		$(".iw4x-menu").removeClass("open");
+		$(".iw4x-menu").removeClass("show");
+	});
+
+	$(".iw4x-menu").on('click', function () {
+		$(".iw6x-menu").removeClass("open");
+		$(".iw6x-menu").removeClass("show");
 	});
 
 	//Switch light/dark
