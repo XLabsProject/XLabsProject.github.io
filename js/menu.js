@@ -36,11 +36,22 @@
 	$(".iw6x-menu").on('click', function () {
 		$(".iw4x-menu").removeClass("open");
 		$(".iw4x-menu").removeClass("show");
+		$(".guides").removeClass("open");
+		$(".guides").removeClass("show");
 	});
 
 	$(".iw4x-menu").on('click', function () {
 		$(".iw6x-menu").removeClass("open");
 		$(".iw6x-menu").removeClass("show");
+		$(".guides").removeClass("open");
+		$(".guides").removeClass("show");
+	});
+	
+	$(".guides").on('click', function () {
+		$(".iw6x-menu").removeClass("open");
+		$(".iw6x-menu").removeClass("show");
+		$(".iw4x-menu").removeClass("open");
+		$(".iw4x-menu").removeClass("show");
 	});
 
 	// Clean up hover menus
@@ -48,11 +59,22 @@
 	$('.iw4x-menu').mouseover(function() {
 		$(".iw6x-menu").removeClass("open");
 		$(".iw6x-menu").removeClass("show");
+		$(".guides").removeClass("open");
+		$(".guides").removeClass("show");
 	  });
 
 	$('.iw6x-menu').mouseover(function() {
 		$(".iw4x-menu").removeClass("open");
 		$(".iw4x-menu").removeClass("show");
+		$(".guides").removeClass("open");
+		$(".guides").removeClass("show");
+	  });
+	  
+	$('.guides').mouseover(function() {
+		$(".iw4x-menu").removeClass("open");
+		$(".iw4x-menu").removeClass("show");
+		$(".iw6x-menu").removeClass("open");
+		$(".iw6x-menu").removeClass("show");
 	  });
 
 	//Switch light/dark
