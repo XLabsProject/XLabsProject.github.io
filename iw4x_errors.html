@@ -1,0 +1,518 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="iw4x, iw6x, x labs, game modifications, cod clients, opensource, open source, ghosts client, mw2 client, iw4, iw6, iw4x errors">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:title" content="X Labs" />
+    <meta property="og:description" content="Errors related to the IW4x client and server with potential fixes. " />
+    <meta property="og:image" content="https://xlabs.dev/img/xlabs_social.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="X Labs" />
+    <meta name="twitter:description" content="Errors related to the IW4x client and server with potential fixes." />
+    <meta name="twitter:url" content=”https://xlabs.dev/iw6x_errors.html” />
+    <meta name="twitter:image" content="https://xlabs.dev/img/xlabs_social.png" />
+    <title>IW4x Errors | X Labs</title>    
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/nivo-lightbox.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/main.css">    
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://kit.fontawesome.com/72366d0c6b.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Menu Section Start -->
+	<div class="fixed-top">
+       <div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav class="navbar navbar-expand-md navbar-light">
+					
+						<a class="navbar-brand" href="https://xlabs.dev/" target="_blank"><img src="img/xlabs.png" alt="X LABS"></a>	
+						
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav ml-auto py-4 py-md-0">
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
+									<a class="nav-link" href="https://xlabs.dev/">Home</a>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link dropdown-toggle iw4x-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IW4x Support</a>
+									<div class="dropdown-menu iw4x-menu">
+										<a class="dropdown-item" href="support_iw4x_client.html">IW4x Client Support</a>
+										<a class="dropdown-item" href="iw4x_repair.html">IW4x Repair Guide</a>
+										<a class="dropdown-item" href="support_iw4x_server.html">IW4x Server Support</a>
+										<a class="dropdown-item" href="iw4x_faq.html">IW4x FAQs</a>
+									</div>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link dropdown-toggle iw6x-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IW6x Support</a>
+									<div class="dropdown-menu iw6x-menu">
+										<a class="dropdown-item" href="support_iw6x_client.html">IW6x Client Support</a>
+										<a class="dropdown-item" href="iw6x_repair.html">IW6x Repair Guide</a>
+										<a class="dropdown-item" href="support_iw6x_server.html">IW6x Server Support</a>
+										<a class="dropdown-item" href="iw6x_faq.html">IW6x FAQs</a>
+									</div>
+								</li>
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
+									<a class="nav-link" href="https://discord.gg/sKeVmR3">Discord</a>
+								</li>
+							</ul>
+						</div>
+					</nav>		
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+    <!-- Menu Section End -->
+    <!-- Header Section End -->     
+    <!-- Client Support Section -->
+    <section id="blog" class="section">
+    <!-- Client Container Starts -->
+      <div class="container">
+        <div class="section-header"> 
+            <div class="blog-item-img">
+                  <img src="img/iw4x_banner.jpg" alt="IW4x">
+              </div>
+          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">IW4x <span>Errors</span></h2>
+          <hr class="lines wow zoomIn" data-wow-delay="0.3s">
+          <p class="section-subtitle wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Learn how to fix your game here.</p>
+        </div>
+        <div class="row">
+          
+            <!-- Support Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-item-text"> 
+                <h4><a id="blackscreen"></a>
+                Q: Black Screen / Not responding on startup
+                </h4>
+				<img src="https://i.imgur.com/Dy1LyLI.jpg" class="img-fluid">
+                <h4>
+                A: <ul>
+					<li>If you have a Nvidia GPU, disable the overlay (see picture). Disable any other overlays as well (Discord, FPS Counters, Recorders, Steam, etc.)</li>
+					<li>Rightclick iw4x.exe, click Properties, go to the Compatibility tab and enable compatibility mode for Windows 8.</li>
+					<li>Turn off fullscreen mode by editing /players/iw4x_config.cfg and changing the line that says set r_fullscreen "1" to set r_fullscreen "0" and set r_noborder "0" to set r_noborder "1". Alternatively, run this batch file in your game folder: <a href="https://cdn.discordapp.com/attachments/275267435945263104/589988562997608486/fullscreen_0.bat">fullscreen_0.bat</a></li>
+					<li>Disable DEP, run this batch file as admin: <a href="https://cdn.discordapp.com/attachments/275267435945263104/544154785943650334/dep_disabler.bat">dep_disabler.bat</a></li>
+					</ul>
+                </h4>
+              </div>
+            </div>
+            <!-- Support Item Wrapper Ends-->
+			
+            <!-- Support Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-item-text"> 
+                <h4><a id="fatalerror"></a>
+                Q: (0xc000005) Fatal Error
+                </h4>
+                <h4>
+                A: <ul>
+				<li>You can try to disable UPNP on your router via its web panel (Consult your ISP or router documentation on how to access your router's web panel).</li>
+				<li>Another potential solution is to update your router's firmware (Outdated firmware may be the cause)</li>
+				<li>Simply restarting your router may resolve the issue</li>
+				<li>As a last resort you can try disconnecting your internet until iw4x is booted to the main menu.</li>
+				</ul>
+                </h4>
+              </div>
+            </div>
+            <!-- Support Item Wrapper Ends-->
+			
+            <!-- Support Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-item-text"> 
+                <h4><a id="fatalerror2"></a>
+                Q: (0xc000007b) Fatal Error
+                </h4>
+                <h4>
+                A: 
+				<ul>
+				<li>Download and run the following program (Installs/repairs runtimes) <a href="http://www.computerbase.de/downloads/systemtools/all-in-one-runtimes/">www.computerbase.de/downloads/systemtools/all-in-one-runtimes/</a></li>
+				<li>If you downloaded any loose DLL's from google and placed them in your folder then YOU NEED TO REMOVE THEM! They can cause this error and are also used to spread malware</li>
+				<li>Try disabling your antivirus / Add an exception for IW4x</li>
+				<li>Make sure Windows is completely updated</li>
+				<li>Reinstall a clean version of Windows as a last resort</li>
+				</ul>
+                </h4>
+              </div>
+            </div>
+            <!-- Support Item Wrapper Ends-->
+			
+			
+            <!-- Support Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-item-text"> 
+                <h4><a id="modlist"></a>
+                Q: Failed to download Mod List
+                </h4>
+                <h4>
+                A: Contact the server owner and inform them of the problem (Suggest a server restart).
+                </h4>
+              </div>
+            </div>
+            <!-- Support Item Wrapper Ends-->
+			
+			
+            <!-- Support Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-item-text"> 
+                <h4><a id="xuid"></a>
+                Q: XUID doesn't match the certificate
+                </h4>
+                <h4>
+                A: Close IW4x, and delete players/guid.dat from your game folder.
+                </h4>
+              </div>
+            </div>
+            <!-- Support Item Wrapper Ends-->
+			
+			
+            <!-- Support Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-item-text"> 
+                <h4><a id="couldnotloadimage"></a>
+                Q: Couldn't load image 'AnyImageNameHere'
+                </h4>
+				<img src="https://i.imgur.com/E0QovYi.jpg" class="img-fluid">
+                <h4>
+                A: <a href="support_iw4x_client.html">Reinstall IW4x.</a>
+                </h4>
+              </div>
+            </div>
+            <!-- Support Item Wrapper Ends-->
+			
+			
+            <!-- Support Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-item-text"> 
+                <h4><a id="lowservers"></a>
+                Q: Low amount of servers
+                </h4>
+                <h4>
+                A: 
+				<ul>
+				<li>Open the ingame console and check the values for net_serverQueryLimit and net_serverFrames</li>
+				<li>Lower them both, step by step, until the amount of servers rise. (Alternatively, set them to their minimum and increase them one by one until your server amount goes down.)</li>
+				<li>As a last resort you can try entering the following command into the console while at the main menu /addnode 74.91.119.236</li>
+				</ul>
+                </h4>
+              </div>
+            </div>
+            <!-- Support Item Wrapper Ends-->
+			
+			
+            <!-- Support Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-item-text"> 
+                <h4><a id="zeroservers"></a>
+                Q: Zero servers
+                </h4>
+                <h4>
+                A: Place <a href="https://cdn.discordapp.com/attachments/275267435945263104/766809297047781426/nodes.dat">this file</a> into your players folder, overwriting the old one.
+                </h4>
+              </div>
+            </div>
+            <!-- Support Item Wrapper Ends-->
+			
+			
+            <!-- Support Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-item-text"> 
+                <h4><a id="entrypointnotfound"></a>
+                Q: Entry Point Not Found - (DirectSound)
+                </h4>
+				<img src="https://i.imgur.com/Dhv3161.jpg" class="img-fluid">
+                <h4>
+                A: <a href="support_iw4x_client.html">Reinstall IW4x.</a>
+                </h4>
+              </div>
+            </div>
+            <!-- Support Item Wrapper Ends-->
+			
+            <!-- Support Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-item-text"> 
+                <h4><a id="zoneversionnotsupported"></a>
+                Q: Zone Version is not supported
+                </h4>
+				<img src="https://i.imgur.com/SVRNaCj.jpg" class="img-fluid">
+                <h4>
+                A: <a href="support_iw4x_client.html">Reinstall IW4x.</a>
+                </h4>
+              </div>
+            </div>
+            <!-- Support Item Wrapper Ends-->
+			
+            <!-- Support Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-item-text"> 
+                <h4><a id="conrtoller"></a>
+                Q: My controller isn't working on IW4x
+                </h4>
+                <h4>
+                A: <a href="support_iw4x_client.html#controllers">Follow our controller guide.</a>
+                </h4>
+              </div>
+            </div>
+            <!-- Support Item Wrapper Ends-->
+			
+            <!-- Support Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-item-text"> 
+                <h4><a id="seclevel"></a>
+                Q: Stuck on Increasing Security Level
+                </h4>
+                <h4>
+                A: Wait patiently, grab yourself a cup of tea while you wait. 🍵
+                </h4>
+              </div>
+            </div>
+            <!-- Support Item Wrapper Ends-->
+			
+            <!-- Support Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-item-text"> 
+                <h4><a id="reloadmenu"></a>
+                Q: Menu unresponsive / black screen with music on disconnect
+                </h4>
+                <h4>
+                A: 
+				<ul>
+				<li>Open the in-game console via the tilde key on your keyboard and enter the following command /reloadmenus</li>
+				<li>Another option is to simply close the game and relaunch it</li>
+				</ul>
+                </h4>
+              </div>
+            </div>
+            <!-- Support Item Wrapper Ends-->
+			
+            <!-- Support Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-item-text"> 
+                <h4><a id="filesyscheck"></a>
+                Q: Error during initialization: Couldn't load fileSysCheck.cfg
+                </h4>
+				<img src="https://i.imgur.com/7hKCF6d.jpg" class="img-fluid">
+                <h4>
+                A: <a href="support_iw4x_client.html">Reinstall IW4x.</a>
+                </h4>
+              </div>
+            </div>
+            <!-- Support Item Wrapper Ends-->
+			
+            <!-- Support Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-item-text"> 
+                <h4><a id="mss32"></a>
+                Q: System Error: mss32.dll was not found
+                </h4>
+				<img src="https://i.imgur.com/Q1QuHni.jpg" class="img-fluid">
+                <h4>
+                A: <a href="support_iw4x_client.html">Reinstall IW4x.</a>
+                </h4>
+              </div>
+            </div>
+            <!-- Support Item Wrapper Ends-->
+			
+            <!-- Support Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-item-text"> 
+                <h4><a id="d3dx9_40"></a>
+                Q: System Error: d3dx9_40.dll was not found
+                </h4>
+				<img src="https://i.imgur.com/0hQfjVJ.jpg" class="img-fluid">
+                <h4>
+                A:
+				Install DirectX 9.0, you can do so from the pre-packed installer that comes with MW2, It's located at:
+				Call of Duty Modern Warfare 2\Redist\DirectX\DXSETUP.exe, simply run the installer and restart your PC to resolve the error. 
+				<br>
+				If you don't have the redist folder you can download the installer manually.
+				(Run directx_mar2009_redist.exe extract to a location of your choice then run DXSETUP.exe):
+				<a href="https://www.microsoft.com/en-us/download/details.aspx?id=19743">DirectX 9.0c Download</a>
+                </h4>
+              </div>
+            </div>
+            <!-- Support Item Wrapper Ends-->
+			
+            <!-- Support Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-item-text"> 
+                <h4><a id="binkw32"></a>
+                Q: System Error: binkw32.dll was not found
+                </h4>
+                <h4>
+                A: <a href="support_iw4x_client.html">Reinstall IW4x.</a>
+                </h4>
+              </div>
+            </div>
+            <!-- Support Item Wrapper Ends-->
+			
+            <!-- Support Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-item-text"> 
+                <h4><a id="crosshair"></a>
+                Q: Crosshair is missing
+                </h4>
+                <h4>
+                A: <ul>
+				<li>Open the in-game console via the tilde key on your keyboard and enter the following command /ui_drawcrosshair 1</li>
+				<li>Alternatively you can manually edit your configuration file (iw4x_config.cfg) located in players folder of your MW2 folder and edit the line /ui_drawcrosshair and set it's value to 1</li>
+				</ul>
+                </h4>
+              </div>
+            </div>
+            <!-- Support Item Wrapper Ends-->
+			
+            <!-- Support Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-item-text"> 
+                <h4><a id="minimap"></a>
+                Q: Minimap is missing
+                </h4>
+                <h4>
+                A: <ul>
+				<li>Open the in-game console via the tilde key on your keyboard and enter the following command /hud_enable 1</li>
+				<li>Alternatively you can manually edit your configuration file (iw4x_config.cfg) located in players folder of your MW2 folder and edit the line /hud_enable and set it's value to 1</li>
+				</ul>
+                </h4>
+              </div>
+            </div>
+            <!-- Support Item Wrapper Ends-->
+			
+            <!-- Support Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-item-text"> 
+                <h4><a id="fpsdrops"></a>
+                Q: FPS drops, choppy frames and ghosting
+                </h4>
+                <h4>
+                A: <ul>
+				<li>Disable the nvidia overlay</li>
+				<li>Disable any recording software / overlays / external fps counters</li>
+				<li>If you have IW4x set to fullscreen mode try switching it to borderless windowed mode</li>
+				<li>Restart your PC (The good old turn it off and back on method)</li>
+				</ul>
+                </h4>
+              </div>
+            </div>
+            <!-- Support Item Wrapper Ends-->
+			
+            <!-- Support Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-item-text"> 
+                <h4><a id="demoplayback"></a>
+                Q: Demo playback - Lost connection to host
+                </h4>
+                <h4>
+                A: <ul>
+				<li>Sadly there is no solution to this issue due the demo code in IW4 being experimental and not compatible with laptop based killstreaks. To read more on this issue see the <a href="https://github.com/XLabsProject/iw4x-client/issues/16">github issue report</a>.</li>
+				<li>The only workaround is to not use laptop based killstreaks if you plan to playback your gameplay without issue.</li>
+				</ul>
+                </h4>
+              </div>
+            </div>
+            <!-- Support Item Wrapper Ends-->
+			
+            <!-- Support Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-item-text"> 
+                <h4><a id="awaitinggame"></a>
+                Q: Stuck on awaiting gamestate
+                </h4>
+                <h4>
+                A: <ul>
+				<li>If you are recieving this issue in a private match the cause is the fact that your in-game name has invalid characters. Please make sure to remove any symbols / non english characters.</li>
+				<li>If you are recieving this issue in a public match the issue is related to your network. Try restarting your pc and router, failing that try IW4x at a friends house or on an internet hotspot to determine if it's your home connection that's at fault.</li>
+				</ul>
+                </h4>
+              </div>
+            </div>
+            <!-- Support Item Wrapper Ends-->
+			
+            <!-- Support Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-item-text"> 
+                <h4><a id="steamhours"></a>
+                Q: Large steam recorded hours
+                </h4>
+                <h4>
+                A: <ul>
+				<li>The simplest soltution is to exit steam prior to lauching IW4x, IW4x will see steam is not running and not attempt to launch steam integration. In doing so preventing MW2 hours being recorded.</li>
+				<li>The other solution is to launch IW4x with the -nosteam parameter. This will disable steam intergration even if steam is open. To add the parameter right click IW4x.exe and select Create Shortcut. This will create a new file called 'iw4x.exe - Shortcut' right click this new file and select properties. Then in the target field add the -nosteam parameter. Example target field: C:\Games\MW2\iw4x.exe -nosteam</li>
+				</ul>
+                </h4>
+              </div>
+            </div>
+            <!-- Support Item Wrapper Ends-->
+			
+            <!-- Support Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-item-text"> 
+                <h4><a id="challenges"></a>
+                Q: Challenges not unlocking
+                </h4>
+                <h4>
+                A: 
+				In order to start progressing a challenge you must view it once from within the barracks menu, to remove it's New status. Your challenges should now unlock as normal.
+                </h4>
+              </div>
+            </div>
+            <!-- Support Item Wrapper Ends-->
+		
+          
+        </div>
+      </div>
+    </section>
+    <!-- blog Section End -->   
+       
+    <!-- Footer Section Start -->
+    <footer>          
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="social-icons wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">
+              <ul>
+                <li class="twitter"><a href="https://twitter.com/XLabsProject"><i class="fab fa-twitter"></i></a></li>
+                <li class="discord"><a href="https://discord.gg/sKeVmR3"><i class="fab fa-discord"></i></a></li>
+                <li class="github"><a href="https://github.com/XLabsProject"><i class="fab fa-github"></i></a></li>               
+              </ul>
+            </div>
+            <div class="site-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0.3s">
+              <p>All copyrights reserved &copy; 2021 - <a rel="nofollow" href="https://xlabs.dev">X Labs</a></p>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End --> 
+
+    <!-- Go To Top Link -->
+    <a href="#" class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/nivo-lightbox.js"></script>    
+    <script src="js/jquery.nav.js"></script>      
+    <script src="js/wow.js"></script>    
+    <script src="js/menu.js"></script>
+    <script src="js/jquery.vide.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>   
+    <script src="js/main.js"></script>
+	    
+  </body>
+</html>
