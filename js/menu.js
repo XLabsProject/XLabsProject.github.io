@@ -43,6 +43,18 @@
 		$(".iw6x-menu").removeClass("show");
 	});
 
+	// Clean up hover menus
+
+	$('.iw4x-menu').mouseover(function() {
+		$(".iw6x-menu").removeClass("open");
+		$(".iw6x-menu").removeClass("show");
+	  });
+
+	$('.iw6x-menu').mouseover(function() {
+		$(".iw4x-menu").removeClass("open");
+		$(".iw4x-menu").removeClass("show");
+	  });
+
 	//Switch light/dark
 
 	$("#switch").on('click', function () {
