@@ -315,6 +315,9 @@ pre code {
         margin-bottom: 10px;
     }
 
+    #blog .blog-item-text img.img-fluid{
+        padding-bottom: 15px;
+    }
 
 /* ==========================================================================
    Hero Area Style
