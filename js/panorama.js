@@ -12,7 +12,7 @@
         theta = 0;
 
     // Image rendered by Slykuiper: https://slykuiper.com/
-    const texture = new THREE.TextureLoader().load('./img/iw6x_panorama.jpg');
+    const texture = new THREE.TextureLoader().load('https://i.imgur.com/eALPkl9.jpg');
 
     window.addEventListener("load", function() {
         init();
