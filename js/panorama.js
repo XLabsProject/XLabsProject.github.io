@@ -4,7 +4,7 @@
     let isUserInteracting = false,
         onPointerDownMouseX = 0,
         onPointerDownMouseY = 0,
-        lon = 0,
+        lon = new Date().getTime() / 100.0,
         onPointerDownLon = 0,
         lat = 0,
         onPointerDownLat = 0,
@@ -12,7 +12,13 @@
         theta = 0;
 
     // Image rendered by Slykuiper: https://slykuiper.com/
-    const texture = new THREE.TextureLoader().load('https://i.imgur.com/eALPkl9.jpg');
+    const textures = [
+        'https://i.imgur.com/eALPkl9.jpg',
+        './img/iw6x_mp_swamp.jpg'
+    ];
+
+    const target = textures[Math.floor(Math.random() * textures.length)];
+    const texture = new THREE.TextureLoader().load(target);
 
     window.addEventListener("load", function() {
         init();
