@@ -14,7 +14,7 @@
     // Image rendered by Slykuiper: https://slykuiper.com/
     const textures = [
         'https://i.imgur.com/eALPkl9.jpg',
-        './img/iw6x_mp_swamp.jpg'
+        'https://i.imgur.com/0CXz7zd.jpg'
     ];
 
     const target = textures[Math.floor(Math.random() * textures.length)];
