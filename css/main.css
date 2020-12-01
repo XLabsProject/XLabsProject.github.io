@@ -418,7 +418,7 @@ pre code {
 }
 #video-area .contents {
   /*padding: 160px 0 80px;*/
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px) saturate(1.5);
   width: 100%;
   padding: 1vmax;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
