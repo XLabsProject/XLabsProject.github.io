@@ -43,6 +43,12 @@
 </head>
 
 <body>
+    <div id="curtain">
+        <div class="row">
+            <div class="lds-dual-ring"></div>
+        </div>
+    </div>
+
     <!-- Menu Section Start -->
     <div class="fixed-top">
         <div class="container">
@@ -284,6 +290,14 @@
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/panorama.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            setTimeout(function() {
+                $("#curtain").fadeOut();
+            }, 100);
+        });
+    </script>
 
 </body>
 

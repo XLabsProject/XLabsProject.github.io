@@ -17,8 +17,14 @@
         'https://i.imgur.com/0CXz7zd.jpg'
     ];
 
+    // ugly but fuck it.
+    $.holdReady(true);
+    const resume = function() {
+        $.holdReady(false);
+    };
+
     const target = textures[Math.floor(Math.random() * textures.length)];
-    const texture = new THREE.TextureLoader().load(target);
+    const texture = new THREE.TextureLoader().load(target, resume, undefined, resume);
 
     window.addEventListener("load", function() {
         init();
