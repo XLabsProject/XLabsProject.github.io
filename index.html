@@ -294,8 +294,11 @@
     <script>
         $(document).ready(function() {
             setTimeout(function() {
-                $("#curtain").fadeOut();
-            }, 100);
+                window.scrollTo(0, 0);
+                requestAnimationFrame(function() {
+                    $("#curtain").fadeOut();
+                });
+            }, 60);
         });
     </script>
 
