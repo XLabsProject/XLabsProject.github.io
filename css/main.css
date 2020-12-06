@@ -1226,3 +1226,5 @@ footer {
         transform: rotate(360deg);
     }
 }
+
+.anchor { padding-top: 90px; }
