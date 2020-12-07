@@ -1,0 +1,403 @@
+^:Version 0.6.0
+
+^4Added
+
+- Implement unbanclient command.
+- Implement /serverlist api endpoint on dedicated servers
+- Add dvar to control the server query rate (net_serverQueryLimit &
+net_serverFrames)
+
+^3Changed
+
+- Update dependencies
+
+^2Fixed
+
+- Fix mods not working in private matches.
+- Fix multiple game structures (map tools)
+- Fix multiple vulnerabilities
+- Fix lag spikes on lower end PCs
+- Fix invalid name check
+- Fix lobby server map downloading
+- Fix steam integration
+
+^1Known issues
+
+- HTTPS is not supported for fast downloads at the moment.
+
+---
+
+^:Version 0.5.4
+
+^4Added
+
+- Integrate IW4MVM by luckyy.
+
+^3Changed
+
+- Displayed stats for Dragunov have been changed, has no effect on actual game play.
+
+^2Fixed
+
+- Fix fast download failing when the target host is missing a trailing slash.
+- Fix servers not being listed in the server browser.
+- Fix some FPS drop issues caused by compression code.
+
+^1Known issues
+
+- HTTPS is not supported for fast downloads at the moment.
+
+---
+
+^:Version 0.5.3
+
+^4Added
+
+- Increase webserver security.
+
+^2Fixed
+
+- Reduce lags introduced by nodes.
+- Fix modlist download.
+
+---
+
+^:Version 0.5.2
+
+^2Fixed
+
+- Fix dedicated server crash. 
+
+---
+
+^:Version 0.5.1
+
+^4Added
+
+- Add fast download option for custom mods/maps based on Call of Duty 4.
+- Display a toast when an update is available.
+- Use the hourglass cursor while loading assets (with the native cursor feature).
+- Show bots in parenthesis after the number of players in the serverlist (request).
+- Add GSC event `level waittill("say", string, player);` (request).
+- Restrict unauthorized mod download for password protected servers.
+- Add OMA support for 15 classes.
+
+^3Changed
+
+- Show friend avatars when they play IW4x (request).
+- Rewrite and optimize the entire node system.
+- Remove syncnode command for node system.
+- Remove steam start.
+
+^2Fixed
+
+- Fix lags and frame drops caused by server sorting.
+- Fix demos on custom maps.
+- Can no longer join a lobby or server with an incorrect password.
+- Fix crashes caused by a bug in file/data compression.
+- Improve overall stability.
+
+---
+
+^:Version 0.5.0
+
+^4Added
+
+- Add GSC functionality to download files via HTTP(S) (request).
+- Implement preliminary custom map support.
+
+^3Changed
+
+- Add new nicknames for bots.
+- Bumped Fastfile version.
+  If you built fastfiles with the zone builder (e.g. mod.ff) you have to rebuild them!
+- Default sv_network_fps to 1000 on dedicated game servers.
+- Increase maximum FOV to 120.
+
+^2Fixed
+
+- Fix iw4x_onelog dvar.
+- Fix server list only showing local servers by default instead of Internet servers.
+- Fix some deadlock situations on game shutdown. 
+
+---
+
+^:Version 0.4.2
+
+^3Changed
+
+- Disable unnecessary dvar update in server browser.
+- Update bot names.
+
+^2Fixed
+
+- Fix game crashes.
+- Fix process permissions.
+- Fix classic AK-47 color bleedthrough.
+- Realigned the M93's Raffica iron sights.
+
+---
+
+^:Version 0.4.1
+
+^2Fixed
+
+- Fix command line argument parsing.
+
+---
+
+^:Version 0.4.0
+
+^4Added
+
+- Set played with status.
+- Add support for 15 classes.
+- Add iw4x_onelog dvar.
+- Add show server/playercount in server browser.
+
+^3Changed
+
+- Do not show friend status notifications with stream friendly UI.
+- Reduce loaded modules for dedis.
+- Use joystick emblem for friend status.
+- Disable XP bar when max level.
+- Change fs_game display postition.
+- Replace Painkiller with Juiced from IW5.
+
+^2Fixed
+
+- Fix AK weaponfiles.
+- Fix brightness slider.
+- Fix text length for column mod in server browser.
+- Changed the L86 LSW to use the correct HUD icon.
+- Re-aligned the M93 Raffica's iron sights.
+- Re-aligned the Desert Eagle's iron sights.
+
+---
+
+^:Version 0.3.3
+
+This version contains critical bug fixes, an update is recommended.
+
+^4Added
+
+- Add mapname to friend status (request).
+- Add option to toggle notify friend state.
+- Add support for mod.ff.
+
+^3Changed
+
+- Disabled big minidump message box.
+- Limit dedicated servers to 15 instances per IP.
+- Move build number location.
+- Remove news ticker and friends button from theater.
+
+^2Fixed
+
+- Fix audio bug in options menu.
+- Fix crash caused by faulty file download requests to game hosts.
+- Fix friend sorting.
+- Fix game not starting issue under certain circumstances.
+- Fix menu crash.
+- Fix typo in security increase popmenu.
+- Fix vid_restart crash with connect protocol.
+- Fix weapon crash issue.
+- Potentially fix no-ammo bug.
+
+---
+
+^:Version 0.3.2
+
+^4Added
+
+- Add working friend system.
+- Add colored pings in the server list.
+- Add credits.
+- Add first launch menu.
+- Add AK-47 (Classic) attachments.
+- Add HUD icon for night vision goggles.
+
+^3Changed
+
+- Join when pressing enter in server list (request).
+- Redesign and refactor all fullscreen menus.
+- Increase weapon and configstring limit.
+- Allow creating full crash dumps if wanted.
+- Set default name from steam.
+- Disabled slow motion in final killcam.
+
+^2Fixed
+
+- Fix missing models on village.
+- Fix custom server motd (request).
+- Fix various memory leaks.
+- Fix mouse pitch (request).
+- Fix compatibility with B3 (request).
+- Fix RCon bug (request).
+- Fix dedicated server crash on linux.
+- Fix crash in mod download.
+- Fix peacekeeper reload sound.
+- Fix cl_maxpackets 125 in settings (request).
+- Fix deserteaglegold_mp icon.
+
+^1Known issues
+
+- Running IW4x on Linux requires gnutls to be installed as it uses HTTPS.
+
+---
+
+^:Version 0.3.1
+
+^4Added
+
+- Add classic AK-47 to CAC.
+- Add servers to favorites when ingame.
+- Add delete favorites button in the serverlist.
+
+^3Changed
+
+- Change maplist to a dynamic list.
+
+^2Fixed
+
+- Fix list focus.
+- Fix mod restart loop.
+- Fix mod download status.
+- Fix modelsurf crash.
+- Fix floating AK-74u.
+
+^1Known issues
+
+- Running IW4x on Linux requires gnutls to be installed as it uses HTTPS.
+
+---
+
+^:Version 0.3.0
+
+^4Added
+
+- Add com_logFilter dvar to configure loglevel.
+- Add peacekeeper.
+- Add support for DLC 8 (Recycled Pack) maps: 
+  Chemical Plant, Crash: Tropical, Estate: Tropical, Favela: Tropical, Forgotten City
+
+^3Changed
+
+- Improve node synchronization handling.
+- Improve security by modifying GUIDs to allow 64-bit certificate fingerprints.
+- Optimize fastfiles, they are now a lot smaller.
+- Replace intro.
+
+^2Fixed
+
+- Fix concurrent image loading bug.
+- Fix issues when spawning more than one bot.
+- Fix no ammo bug.
+- Fix server crash on startup.
+- Fix splash screen hang.
+
+^1Known issues
+
+- Running IW4x on Linux requires gnutls to be installed as it uses HTTPS.
+
+---
+
+^:Version 0.2.1
+
+^4Added
+
+- Add support for CoD:Online maps: Firing Range, Rust, Shipment.
+- Add sv_motd dvar for server owners to set motd (will be visible in the loadscreen).
+- Add Zonebuilder support for sounds and fx.
+- Add command setviewpos.
+- Add high-definition loadscreens.
+
+^3Changed
+
+- Rename Arctic Wet Work map to it's official name (Freighter).
+- Complete redesign of the main menus.
+- Allow cl_maxpackets to be set up to 125.
+
+^2Fixed
+
+- Fix crash when using the Harrier killstreak.
+- Disable code that downloads news/changelog when in zonebuilder mode.
+- Fix freeze on game shutdown.
+- Disable unlockstats while ingame to prevent a crash.
+
+^1Known issues
+
+- Running IW4x on Linux requires gnutls to be installed as it uses HTTPS.
+
+---
+
+^:Version 0.2.0
+
+^4Added
+
+- Support for CoD:Online maps: 
+  Arctic Wet Work, Bloc, Bog, Crossfire, Killhouse, Nuketown, Wet Work
+
+^2Fixed
+
+- Fix techniques in Zonebuilder.
+- Fix possible memory leak.
+- Fix timeout bug when connecting to server via iw4x link.
+- Partially fix deadlock in decentralized networking code.
+
+^1Known issues
+
+- Running IW4x on Linux requires gnutls to be installed as it uses HTTPS.
+
+---
+
+^:Version 0.1.1
+
+^4Added
+
+- IW5 material embedding.
+
+^3Changed
+
+- Enhanced mod download with detailed progress display.
+
+^2Fixed
+
+- Fix and optimize network logging commands.
+- Fix console not displaying command inputs properly.
+- Fix crash when running multiple instances of the IW4x client from the same directory.
+- Fix crash when the `securityLevel` command is used on a game server.
+- Fix possible data corruption in code for decentralized networking.
+- Fix possible deadlock during client shutdown.
+
+---
+
+^:Version 0.1.0
+
+^4Added
+
+- Added `banclient` command to permanently ban a client ip from a server.
+- Added capabilities to save played games and replay them ("Theater").
+- Added code for generating and sending minidumps for debugging purposes.
+- Added commands to forward console and games log to other computers ("network logging").
+- Added D3D9Ex.
+- Added filters for server list.
+- Added handling for `iw4x://` URLs ("connect protocol").
+- Added lean support through new key bindings.
+- Added option to use native cursor as replacement for the sometimes laggy in-game cursor.
+- Added news ticker.
+- Added remote console ("RCon").
+- Added support for BigBrotherBot.
+- Added mod download.
+- Added Warfare2 text coloring.
+- Added zone builder.
+- Implemented a completely decentralized peering network.
+- Implemented playlists which can be used for flexible map and gametype rotation.
+- Introduced security levels.
+- IW4x resource files moved to their own folder.
+- Reintroduced parties, now also available for dedicated servers ("lobby servers").
+
+^3Changed
+
+- Logs moved to `userraw` folder.
+- Replaced main menu background music.
