@@ -1230,3 +1230,27 @@ footer {
 .anchor {
     padding-top: 90px;
 }
+
+.table-fixed {
+  width: 100%;
+}
+
+/*This will work on every browser but Chrome Browser*/
+.table-fixed thead {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 35px;
+  z-index: 5;
+  background-color: #343a40;
+  color: #fff;
+}
+
+/*This will work on every browser*/
+.table-fixed thead th {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 35px;
+    z-index: 5;
+    background-color: #343a40;
+    color: #fff;
+}
