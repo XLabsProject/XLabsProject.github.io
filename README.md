@@ -1,7 +1,5 @@
 # [XLabs.dev](https://xlabs.dev) ![Amount of GitHub Stars](https://img.shields.io/github/stars/XLabsProject/XLabsProject.github.io)
 
----
-
 ![XLabs Banner](https://xlabs.dev/img/xlabs_social.png)
 
 Welcome to the repository that holds the [XLabs.dev](https://xlabs.dev) source code.
