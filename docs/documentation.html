@@ -719,7 +719,7 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
 <p class="page" id="Scripting"></p><h1>Scripting.md</h1>
 <h1 id="introduction">Introduction</h1>
 <p>This is the documentation for the IW6x scripting API.<br>Please note that the API might change over time and thus break existing scripts.<br>The intention is to create the best API possible and thus negelecting backwards compatibility.<br>There are also plans to create a common API with the Plutonium team, which might also have a huge impact on the API again, once this is done.  </p>
-<p>The IW6x scipring API integrates into the game&#39;s scripting VM/environment, which might be more commonly known as GSC.
+<p>The IW6x scripting API integrates into the game&#39;s scripting VM/environment, which might be more commonly known as GSC.
 The scripts are written in LUA. In case you are not familiar with LUA, you should catch up <a href="https://www.lua.org/pil/contents.html" target="_blank">here</a>.</p>
 <h1 id="quick-dirty-example">Quick &amp; dirty Example</h1>
 <p>Here is a sample script. If you want to read code instead of documentation, this should cover up the basics of the API:</p>
@@ -771,7 +771,20 @@ The scripts are written in LUA. In case you are not familiar with LUA, you shoul
 <span class="hljs-keyword">end</span>
 
 level:onnotify(<span class="hljs-string">"connected"</span>, player_connected)</pre><h1 id="file-structure">File structure</h1>
-<h1 id="types">Types</h1>
+<p>All scripts need to be placed in the <code>iw6x/scripts</code> folder in your Call of Duty: Ghosts installation folder.<br>You will need to create a folder for your script, for example <code>my_script</code>. The main entrypoint is always the <code>__init__.lua</code> file in there.</p>
+<p>The structure should be like this:</p>
+<pre class="hljs"><span class="hljs-selector-tag">COD</span> <span class="hljs-selector-tag">Ghosts</span>
+├── <span class="hljs-selector-tag">iw6x</span>
+│   ├── <span class="hljs-selector-tag">scripts</span>
+│   │   ├── <span class="hljs-selector-tag">my_script</span>
+│   │   │   ├── __<span class="hljs-selector-tag">init__</span><span class="hljs-selector-class">.lua</span>
+│   │   │   └── <span class="hljs-selector-tag">other_script</span><span class="hljs-selector-class">.lua</span>
+│   │   ├── <span class="hljs-selector-tag">my_next_script</span>
+│   │   │   ├── __<span class="hljs-selector-tag">init__</span><span class="hljs-selector-class">.lua</span>
+│   │   │   └── <span class="hljs-selector-tag">script</span><span class="hljs-selector-class">.lua</span>
+└── <span class="hljs-selector-tag">iw6x</span><span class="hljs-selector-class">.exe</span></pre><p>To load another script, you can use the <code>include</code> function.<br>If you want tofor example include <code>other_script.lua</code>, use it like this:</p>
+<pre class="hljs">include(<span class="hljs-string">"other_script"</span>)
+<span class="hljs-comment">-- [...]</span></pre><h1 id="types">Types</h1>
 <p>There are only 5 distinct types needed to interact with game&#39;s scripting environment.<br>LUA of course has more types, but what is meant by this is the following:<br>When dealing with events, functions or fields, no complex LUA types are supported, only these primitive types:</p>
 <h2 id="strings">Strings</h2>
 <p>Strings are text enclosed by quotes: <code>&quot;Hello World&quot;</code>.
