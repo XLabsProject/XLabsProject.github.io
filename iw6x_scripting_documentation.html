@@ -827,17 +827,57 @@ You can get these arguments by adding paramters to the callback functions, as se
   <span class="hljs-comment">-- This fires the 'my_cool_event' event</span>
   player:notify(<span class="hljs-string">"my_cool_event"</span>, <span class="hljs-string">"Hello"</span>, <span class="hljs-string">"World"</span>)
 <span class="hljs-keyword">end</span></pre><h1 id="timers">Timers</h1>
-<ul>
-<li>ontimeout</li>
-<li>oninterval</li>
-</ul>
-<h1 id="functions">Functions</h1>
-<ul>
-<li>Member functions</li>
-<li>Global functions</li>
-</ul>
-<h1 id="fields">Fields</h1>
+<p>Timers are required to delay the execution. GSC had a function called <code>wait</code>, which paused the execution of a thread for a specific amount of time.<br>Due to the control flow being different in LUA, there are neither threads, nor is there a wait function.</p>
+<p>However, you can do something else to delay the execution. The functions <code>ontimeout</code> and <code>oninterval</code>, which need to be called on the <code>game</code> object, allow to do that. They take two arguments, a callback and a time to wait in milliseconds.</p>
+<pre class="hljs"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">callback</span><span class="hljs-params">()</span></span>
+  <span class="hljs-comment">-- [...]</span>
+<span class="hljs-keyword">end</span>
 
+game:ontimeout(callback, <span class="hljs-number">1000</span>)</pre><p>Similar to the functions <code>setTimeout</code> and <code>setInterval</code> known from JavaScript, <code>ontimeout</code> executes the callback exactly once and <code>oninterval</code> executes it every time the given amount of time passes.</p>
+<p>You might want to cancel a timeout or an interval. This can be done exactly like it works for events.<br>Both <code>ontimeout</code> and <code>oninterval</code> return a timer with a <code>clear</code> method:</p>
+<pre class="hljs"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">callback</span><span class="hljs-params">()</span></span>
+  <span class="hljs-comment">-- [...]</span>
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-keyword">local</span> timer = game:oninterval(callback, <span class="hljs-number">1000</span>)
+
+<span class="hljs-comment">-- [...]</span>
+
+timer:clear()</pre><p>Timer callbacks don&#39;t take any arguments. If you want to pass an object, like a player, to a callback, you have to capture it, in a lambda for example:</p>
+<pre class="hljs"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">do_something</span><span class="hljs-params">(player)</span></span>
+  <span class="hljs-comment">-- [...]</span>
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-comment">-- [...]</span>
+
+<span class="hljs-keyword">local</span> player = <span class="hljs-comment">-- [...]</span>
+game:oninterval(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span> do_something(player) <span class="hljs-keyword">end</span>, <span class="hljs-number">1000</span>)</pre><h1 id="functions">Functions</h1>
+<p>The game provides a set of global functions and entity methods.<br>The functions provided are pretty much the same as COD4 had them.<br>You can have a look at a COD4 scripting reference: <a href="https://znation.nl/cod4script/">https://znation.nl/cod4script/</a> (libcod category doesn&#39;t exist in IW6x!)<br>Also note that all functions and methods are lowercase in IW6x!</p>
+<p>Global functions are functions that don&#39;t need an entity to work. They need to be called on the <code>game</code> object.<br>In the COD4 scripting reference, these functions don&#39;t have a <code>Call this on:</code> paragraph.<br>Here is an example:  </p>
+<pre class="hljs">game:ambientplay(<span class="hljs-string">"embient_mp_highrise"</span>);</pre><p>There are also member functions. These do have a paragraph called <code>Call this on:</code> in the COD4 reference.
+Here is an example:</p>
+<pre class="hljs">player:freezecontrols(<span class="hljs-literal">false</span>)</pre><p>For a list of all functions and methods available in IW6x, you can have a look at the source code:<br><a href="https://github.com/XLabsProject/iw6x-client/blob/develop/src/client/game/scripting/function_tables.cpp">https://github.com/XLabsProject/iw6x-client/blob/develop/src/client/game/scripting/function_tables.cpp</a></p>
+<h1 id="fields">Fields</h1>
+<p>Entities do have fields (or properties).<br>They differ for each type of entity. For example players have fields like <code>name</code>, <code>origin</code> or <code>angles</code> and hud elements have fields like <code>x</code>, <code>y</code> or <code>alpha</code>.<br>You can get and set them like this (only the 5 primitive types are supported):</p>
+<pre class="hljs"><span class="hljs-keyword">local</span> playername = player.name
+player.origin = vector:new()</pre><p>Creating new properties or fields does not work yet, so you can&#39;t store own data in an entity.<br>You have to create your own construct for that.</p>
+<p>Additionally, there is no complete list of which fields exist. <code>level.players</code> is not a field for example. This was a variable.<br>So not every variable that existed in GSC is available as a field in here. </p>
+<h1 id="noteworthy-things">Noteworthy things</h1>
+<p>Players can disconnect. It might sound obvious, but is important for scripting.<br>Executing functions on a player that doesn&#39;t exist won&#39;t work. Additionally, captured player objects need to be freed.</p>
+<p>GSC used to have a function called <code>endon</code>, which allowed to terminate a thread as soon as an event happend, for example <code>player endon(&quot;disconnect&quot;)</code>
+stopped the execution, when a player disconnected.</p>
+<p>There is no such concept in IW6x. You will need to work with a combination of clearing timers and <code>onnotifyonce</code>, like this:</p>
+<pre class="hljs">
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">do_something</span><span class="hljs-params">()</span></span>
+  <span class="hljs-comment">-- [...]</span>
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-keyword">local</span> timer = game:oninterval(do_something, <span class="hljs-number">1000</span>)
+
+  <span class="hljs-comment">-- [...]</span>
+
+player:onnotifyonce(<span class="hljs-string">"disconnect"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span> timer:clear() <span class="hljs-keyword">end</span>)
+</pre>
         </div> <!-- /div.col-md-9 -->
       </div> <!-- /div.row -->
     </div> <!-- /div.container -->
