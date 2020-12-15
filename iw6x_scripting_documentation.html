@@ -862,7 +862,9 @@ Here is an example:</p>
 <pre class="hljs"><span class="hljs-keyword">local</span> playername = player.name
 player.origin = vector:new()</pre><p>Creating new properties or fields does not work yet, so you can&#39;t store own data in an entity.<br>You have to create your own construct for that.</p>
 <p>Additionally, there is no complete list of which fields exist. <code>level.players</code> is not a field for example. This was a variable.<br>So not every variable that existed in GSC is available as a field in here. </p>
-<h1 id="noteworthy-things">Noteworthy things</h1>
+<h1 id="command-execution">Command execution</h1>
+<p>Unlike in GSC, the scripting API allows to execute console commands (for versions &gt; v1.1.0).<br>You can use the <code>executecommand</code> function on the <code>game</code> object like this:</p>
+<pre class="hljs">game:executecommand(<span class="hljs-string">"map mp_prisonbreak"</span>)</pre><h1 id="noteworthy-things">Noteworthy things</h1>
 <p>Players can disconnect. It might sound obvious, but is important for scripting.<br>Executing functions on a player that doesn&#39;t exist won&#39;t work. Additionally, captured player objects need to be freed.</p>
 <p>GSC used to have a function called <code>endon</code>, which allowed to terminate a thread as soon as an event happend, for example <code>player endon(&quot;disconnect&quot;)</code>
 stopped the execution, when a player disconnected.</p>
