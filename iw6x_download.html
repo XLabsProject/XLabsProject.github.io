@@ -1,12 +1,31 @@
+<!--
+
+<meta http-equiv="refresh" content="0; URL=https://ci.appveyor.com/api/projects/XLabsProject/iw6x-client/artifacts/build%2Fbin%2Fx64%2FRelease%2Fiw6x.exe?branch=master&job=Environment%3A%20APPVEYOR_BUILD_WORKER_IMAGE%3DVisual%20Studio%202019%2C%20PREMAKE_ACTION%3Dvs2019%2C%20CI%3D1%3B%20Configuration%3A%20Release"/>
+
+<meta http-equiv="refresh" content="0; url=https://github.com/XLabsProject/iw6x-client/releases/latest"/>
+
+-->
+
 <!DOCTYPE html>
-<html>
-<head>
-    <!--<meta http-equiv="refresh" content="0; URL=https://ci.appveyor.com/api/projects/XLabsProject/iw6x-client/artifacts/build%2Fbin%2Fx64%2FRelease%2Fiw6x.exe?branch=master&job=Environment%3A%20APPVEYOR_BUILD_WORKER_IMAGE%3DVisual%20Studio%202019%2C%20PREMAKE_ACTION%3Dvs2019%2C%20CI%3D1%3B%20Configuration%3A%20Release"
-    />-->
-    <meta http-equiv="refresh" content="0; url=https://github.com/XLabsProject/iw6x-client/releases/latest"/>
-    <meta charset="UTF-8" />
-    <title>IW6x Download</title>
-</head>
-<body>
-</body>
-</html>
+
+<HTML> 
+<title>IW6x Download</title>
+<BODY>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script language="javascript" type="text/javascript">  
+
+function GetLatestReleaseInfo() {
+  $.getJSON("https://api.github.com/repos/XLabsProject/iw6x-client/releases/latest").done(function(release) {
+    var asset = release.assets[0];
+    $(".download").attr("href", asset.browser_download_url);
+  });
+}
+
+GetLatestReleaseInfo();
+
+</script>
+
+<h1><a class="download" class="download" href="https://github.com/XLabsProject/iw6x-client/releases/latest">Download the latest version of IW6x.</a></h1>
+
+</BODY>
+</HTML>
