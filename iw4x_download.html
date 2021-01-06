@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<HTML> 
+<title>IW4x Download</title>
+<BODY>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script language="javascript" type="text/javascript">  
+
+function GetLatestReleaseInfo() {
+  $.getJSON("https://api.github.com/repos/XLabsProject/iw4x-client/releases/latest").done(function(release) {
+    var asset = release.assets[0];
+    $(".download").attr("href", asset.browser_download_url);
+	window.location.replace(asset.browser_download_url);
+  });
+}
+
+GetLatestReleaseInfo();
+
+
+</script>
+
+<p><a class="download" href="https://github.com/XLabsProject/iw4x-client/releases/latest">Download the latest version of IW6x.</a></p>
+<p>Use the link above if the download does not automatically start.</p>
+
+</BODY>
+</HTML>
