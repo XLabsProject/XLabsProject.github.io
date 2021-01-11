@@ -1,3 +1,51 @@
+^:Version 0.6.1
+
+^4Added
+
+- host information to /info endpoint
+- fileWrite GSC Function
+- fileRead GSC Function
+- fileExists GSC Function
+- fileRemove GSC Function
+- botMovement GSC Function
+- botAction GSC Function
+- botWeapon GSC Function
+- botStop GSC Function
+- isBot GSC Function
+- setPing GSC Function
+- GetSystemTime and GetSystemTimeMilliseconds GSC Functions
+- PrintConsole GSC Function
+- Exec GSC Function
+- getIP GSC Method
+- getPing GSC Method
+- scr_intermissionTime GSC Function
+- g_playerCollision Dvar
+- g_playerEjection Dvar
+- r_specularCustomMaps Dvar
+- Unlock safeArea_horizontal and safeArea_vertical Dvars
+- Unlock cg_fovscale Dvar
+- Added g_antilag Dvar
+
+^3Changed
+
+- Stats are now separate for each mod. Player stats are copied to fs_game folder if no stats exist for this mod yet. Keep in mind this also means that level, XP and classes will not be synchronized with the main stats file after this point.
+- Reduced duration of toasts
+- Removed old updater functionality
+- Use old bot names if bots.txt is not found
+
+^2Fixed
+- Node System Crash
+- Dedi crash when info was requested during map rotation
+- An issue where the game was trying to decrypt gsc files which caused it to crash when loading mods
+- An issue causing the game to crash when Steam was running in the background
+- Slow download speed when using fast download
+
+^1Known issues
+
+- HTTPS is not supported for fast downloads at the moment.
+
+---
+
 ^:Version 0.6.0
 
 ^4Added
