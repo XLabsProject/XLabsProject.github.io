@@ -203,7 +203,8 @@ pre code {
     border: 0px;
     padding: 2px;
 }
-iframe{
+
+iframe {
     border-width: 0px;
 }
 
@@ -1006,6 +1007,14 @@ footer {
     background: #007bb6;
 }
 
+.patreon a {
+    color: #FF6871;
+}
+
+.patreon a:hover {
+    background: #FF6871;
+}
+
 .github a {
     color: #121212;
 }
@@ -1235,20 +1244,24 @@ footer {
 }
 
 .table-fixed {
-  width: 100%;
+    width: 100%;
 }
+
 
 /*This will work on every browser but Chrome Browser*/
+
 .table-fixed thead {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 35px;
-  z-index: 5;
-  background-color: #343a40;
-  color: #fff;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 35px;
+    z-index: 5;
+    background-color: #343a40;
+    color: #fff;
 }
 
+
 /*This will work on every browser*/
+
 .table-fixed thead th {
     position: sticky;
     position: -webkit-sticky;
