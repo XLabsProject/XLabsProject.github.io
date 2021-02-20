@@ -158,25 +158,23 @@
                                     <ol>
                                         <li>Download the S1x Dedicated Server Full <a href="https://dss0.cc/alterwarez/download/s1x_dedicated_server_full.torrent">torrent</a> and place it in a location of your choosing on your VPS or PC.</li>
                                         <li>Download the S1x client from the X Labs <a href="https://xlabs.dev/s1x_download.html">Download </a>and place it into your server folder.</li>
-                                        <li>Download the server configurations from <a href="#">GitHub</a>, and place the files in the server folder.</li>
+                                        <li>Download the server configurations from <a href="https://github.com/ChxseH/s1x-dedi-files/archive/main.zip">GitHub</a>, and place the files in the server folder.</li>
+										<!-- replace the link above with dss0's repo, or whoever decides to make one instead of mine. THAT IS A PLACEHOLDER. -->
                                         <li>Carefully review and edit the configuration settings file to your liking. Give it a hostname, gametype, and remove/add maps that you want on the rotate, etc.</li>
                                         <li>Save the server.cfg file you just edited after you are done.</li>
                                         <li>Forward the TCP and UDP port (27016). If you changed the default port or are adding another server, you may need to open the following addition ports: 27017, 21018, etc.</li>
                                         <li>Run the DedicatedServer.bat or ZombiesDedicatedServer.bat and the server should begin to load.</li>
                                     </ol>
                                     <h4>
-                                        Zombies Mode Server:
+                                        Zombies/Survival Mode Server:
                                     </h4>
-									<p>This section is a WIP.</p>
-									<!--
                                     <p>
-                                        If you want to set up an Extinction server, you must do the following:
+                                        If you want to set up a Zombies or Survival Mode server, you must do the following:
                                     </p>
                                     <ol>
-                                        <li>Add <code>+zombies 1</code> to your .bat file or launch parameters.</li>
-                                        <li>Adjust your map rotation to use the Zombies maps. Example: <code>set sv_maprotation "gametype zombies map mp_alien_town map mp_alien_armory map mp_alien_beacon map mp_alien_dlc3 map mp_alien_last"</code></li>
+                                        <li>Add <code>+zombiesMode 1</code> (zombies), or <code>+survival 1</code> (horde) to your .bat file or launch parameters respectively.</li>
+                                        <li>Adjust your map rotation to use the Zombies maps. Example: <code>set sv_maprotation "gametype zombies map mp_zombie_ark map mp_zombie_brg map mp_zombie_h2o map mp_zombie_lab"</code></li>
                                     </ol>
-									-->
                                     <h4>
                                         Known Issues:
                                     </h4>
