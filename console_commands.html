@@ -82,6 +82,18 @@
                                     </div>
                                 </li>
                                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link dropdown-toggle s1x-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">S1x Support</a>
+                                    <div class="dropdown-menu s1x-menu">
+                                        <a class="dropdown-item" href="support_s1x_client.html">S1x Client Support</a>
+                                        <a class="dropdown-item" href="s1x_repair.html">S1x Repair Guide</a>
+                                        <a class="dropdown-item" href="s1x_faq.html">S1x FAQs</a>
+                                        <a class="dropdown-item" href="s1x_controllers.html">S1x Controller Guide</a>
+                                        <a class="dropdown-item" href="s1x_privatematch.html">S1x Private Match Guide</a>
+                                        <a class="dropdown-item" href="support_s1x_server.html">S1x Server Support</a>
+                                        <a class="dropdown-item" href="s1x_errors.html">S1x Errors</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                                     <a class="nav-link dropdown-toggle guides" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Misc Guides</a>
                                     <div class="dropdown-menu guides">
                                         <a class="dropdown-item" href="console_commands.html">Console Commands</a>
@@ -125,6 +137,7 @@
                                     <th scope="col">Cheat Protected</th>
                                     <th scope="col">IW4x</th>
                                     <th scope="col">IW6x</th>
+                                    <th scope="col">S1x</th>
                                     <th scope="col">Description</th>
                                 </tr>
                             </thead>
@@ -135,6 +148,7 @@
                                     <td>X</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>✓</td>
                                     <td>Changes your name.</td>
                                 </tr>
                                 <tr>
@@ -143,6 +157,7 @@
                                     <td>X</td>
                                     <td>✓</td>
                                     <td>X</td>
+									<td>X</td>
                                     <td>Unlock everything (IW4x) and rank up.</td>
                                 </tr>
                                 <tr>
@@ -151,6 +166,7 @@
                                     <td>X</td>
                                     <td>X</td>
                                     <td>✓</td>
+									<td>X</td>
                                     <td>Unlock everything (IW6x) and rank up.</td>
                                 </tr>
                                 <tr>
@@ -159,6 +175,7 @@
                                     <td>X</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>✓</td>
                                     <td>Manually tweak your desired FOV value.</td>
                                 </tr>
                                 <tr>
@@ -167,6 +184,7 @@
                                     <td>X</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>✓</td>
                                     <td>The command is useful for fine tuning of your desired sensitivity.</td>
                                 </tr>
                                 <tr>
@@ -175,6 +193,7 @@
                                     <td>X</td>
                                     <td>✓</td>
                                     <td>X</td>
+									<td>X</td>
                                     <td>Enables/Disables the IW4x intro.</td>
                                 </tr>
                                 <tr>
@@ -183,6 +202,7 @@
                                     <td>X</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>✓</td>
                                     <td>Displays a FPS counter on-screen.</td>
                                 </tr>
                                 <tr>
@@ -191,6 +211,7 @@
                                     <td>X</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>✓</td>
                                     <td>Adjusts the yawspeed (Turn Right/Left) sensitivity.</td>
                                 </tr>
                                 <tr>
@@ -199,6 +220,7 @@
                                     <td>X</td>
                                     <td>✓</td>
                                     <td>X</td>
+									<td>X</td>
                                     <td>Adjusts your title with whatever you want.</td>
                                 </tr>
                                 <tr>
@@ -207,6 +229,7 @@
                                     <td>X</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>✓</td>
                                     <td>Adjusts the FPS (this is only useful for doing a specific FPS)</td>
                                 </tr>
                                 <tr>
@@ -215,6 +238,7 @@
                                     <td>X</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>✓</td>
                                     <td>Enable/Disable fullbright.</td>
                                 </tr>
                                 <tr>
@@ -223,6 +247,7 @@
                                     <td>X</td>
                                     <td>✓</td>
                                     <td>X</td>
+									<td>X</td>
                                     <td>Enable/Disable specular custom maps.</td>
                                 </tr>
                                 <tr>
@@ -231,6 +256,7 @@
                                     <td>X</td>
                                     <td>✓</td>
                                     <td>X</td>
+									<td>X</td>
                                     <td>Change the horizontal position of the safe area.</td>
                                 </tr>
                                 <tr>
@@ -239,6 +265,7 @@
                                     <td>X</td>
                                     <td>✓</td>
                                     <td>X</td>
+									<td>X</td>
                                     <td>Change the vertical position of the safe area.</td>
                                 </tr>
                                 <tr>
@@ -247,14 +274,16 @@
                                     <td>X</td>
                                     <td>✓</td>
                                     <td>X</td>
+									<td>?</td>
                                     <td>Flag whether player collision is on or or off.</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">g_playerEjection</th>
-                                    <td>g_playerCollision 1</td>
+                                    <td>g_playerEjection 1</td>
                                     <td>X</td>
                                     <td>✓</td>
                                     <td>X</td>
+									<td>?</td>
                                     <td>Flag whether player ejection is on or or off.</td>
                                 </tr>
                                 <tr>
@@ -263,6 +292,7 @@
                                     <td>X</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>✓</td>
                                     <td>Connect to specified IP and port.</td>
                                 </tr>
                                 <tr>
@@ -271,6 +301,7 @@
                                     <td>X</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>✓</td>
                                     <td>Change the map.</td>
                                 </tr>
                                 <tr>
@@ -279,6 +310,7 @@
                                     <td>X</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>✓</td>
                                     <td>Quickly restarts the match.</td>
                                 </tr>
                                 <tr>
@@ -287,6 +319,7 @@
                                     <td>X</td>
                                     <td>✓</td>
                                     <td>X</td>
+									<td>✓</td>
                                     <td>Fully restart the map.</td>
                                 </tr>
                                 <tr>
@@ -295,6 +328,7 @@
                                     <td>X</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>X</td>
                                     <td>Display information about the current game and players.</td>
                                 </tr>
                                 <tr>
@@ -303,6 +337,7 @@
                                     <td>X</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>X</td>
                                     <td>Kicks the player by ID. Use the <code>status</code> command to obtain the client ID.</td>
                                 </tr>
                                 <tr>
@@ -311,6 +346,7 @@
                                     <td>X</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>✓</td>
                                     <td>Changes the port your server/game will run on.</td>
                                 </tr>
                                 <tr>
@@ -319,6 +355,7 @@
                                     <td>✓</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>?</td>
                                     <td>Enables third person mode.</td>
                                 </tr>
                                 <tr>
@@ -327,6 +364,7 @@
                                     <td>X</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>✓</td>
                                     <td>The size of the chat that can be shown.</td>
                                 </tr>
                                 <tr>
@@ -335,6 +373,7 @@
                                     <td>✓</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>✓</td>
                                     <td>Enables/disables the HUD.</td>
                                 </tr>
                                 <tr>
@@ -343,6 +382,7 @@
                                     <td>X</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>✓</td>
                                     <td>Enables/disables the crosshair.</td>
                                 </tr>
                                 <tr>
@@ -351,6 +391,7 @@
                                     <td>✓</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>✓</td>
                                     <td>Enables/disables the showing of your gun.</td>
                                 </tr>
                                 <tr>
@@ -359,6 +400,7 @@
                                     <td>X</td>
                                     <td>X</td>
                                     <td>✓</td>
+									<td>?</td>
                                     <td>Enables/Disables the ping counter.</td>
                                 </tr>
                                 <tr>
@@ -367,6 +409,7 @@
                                     <td>X</td>
                                     <td>✓</td>
                                     <td>X</td>
+									<td>X</td>
                                     <td>Enables/Disables the lagometer.</td>
                                 </tr>
                                 <tr>
@@ -375,6 +418,7 @@
                                     <td>X</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>✓</td>
                                     <td>Manually tweak your desired FOV value. (affects aim fov)</td>
                                 </tr>
                                 <tr>
@@ -383,6 +427,7 @@
                                     <td>X</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>✓</td>
                                     <td>Tweak x value of your gun. (In IW6x the max value is 2)</td>
                                 </tr>
                                 <tr>
@@ -391,6 +436,7 @@
                                     <td>-</td>
                                     <td>✓</td>
                                     <td>X</td>
+									<td>X</td>
                                     <td>Change the map and enables cheats.</td>
                                 </tr>
                                 <tr>
@@ -399,6 +445,7 @@
                                     <td>-</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>✓</td>
                                     <td>Enable cheats.</td>
                                 </tr>
                                 <tr>
@@ -407,6 +454,7 @@
                                     <td>X</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>✓</td>
                                     <td>Enables/Disables developer mode.</td>
                                 </tr>
                                 <tr>
@@ -415,6 +463,7 @@
                                     <td>✓</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>X</td>
                                     <td>Change game speed (requires devmap or sv_cheats 1) [Default = 190]</td>
                                 </tr>
                                 <tr>
@@ -423,6 +472,7 @@
                                     <td>✓</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>X</td>
                                     <td>Change game gravity (requires devmap or sv_cheats 1) [Default = 600]</td>
                                 </tr>
                                 <tr>
@@ -431,6 +481,7 @@
                                     <td>✓</td>
                                     <td>✓</td>
                                     <td>X</td>
+									<td>?</td>
                                     <td>Changes amount you need to fall to take damage.</td>
                                 </tr>
                                 <tr>
@@ -439,6 +490,7 @@
                                     <td>✓</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>X</td>
                                     <td>Enables/Disables noclip mode.</td>
                                 </tr>
                                 <tr>
@@ -447,6 +499,7 @@
                                     <td>✓</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>✓</td>
                                     <td>Enables/Disables ufo mode.</td>
                                 </tr>
                                 <tr>
@@ -455,6 +508,7 @@
                                     <td>✓</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>✓</td>
                                     <td>Enables/Disables god.</td>
                                 </tr>
                                 <tr>
@@ -463,6 +517,7 @@
                                     <td>✓</td>
                                     <td>✓</td>
                                     <td>X</td>
+									<td>X</td>
                                     <td>Sets the jump height.</td>
                                 </tr>
                                 <tr>
@@ -471,6 +526,7 @@
                                     <td>✓</td>
                                     <td>✓</td>
                                     <td>X</td>
+									<td>X</td>
                                     <td>Sets the scale of time.</td>
                                 </tr>
                                 <tr>
@@ -479,6 +535,7 @@
                                     <td>✓</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>?</td>
                                     <td>See through stuff.</td>
                                 </tr>
                                 <tr>
@@ -487,6 +544,7 @@
                                     <td>✓</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>?</td>
                                     <td>Enable/Disable fog.</td>
                                 </tr>
                                 <tr>
@@ -495,6 +553,7 @@
                                     <td>X</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>✓</td>
                                     <td>Change the hostname of your server/private match.</td>
                                 </tr>
                                 <tr>
@@ -503,6 +562,7 @@
                                     <td>X</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>✓</td>
                                     <td>Change the gametype of your server/private match.</td>
                                 </tr>
                                 <tr>
@@ -511,6 +571,7 @@
                                     <td>X</td>
                                     <td>✓</td>
                                     <td>✓</td>
+									<td>X</td>
                                     <td>Used for managing your server in game.</td>
                                 </tr>
                             </tbody>
