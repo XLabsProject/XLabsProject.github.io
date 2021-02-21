@@ -42,7 +42,7 @@
     </script>
     <script language="javascript" type="text/javascript">
         function GetLatestReleaseInfo() {
-            $.getJSON("https://api.github.com/repos/XLabsProject/iw4x-client/releases/latest").done(function(release) {
+            $.getJSON("https://api.github.com/repos/XLabsProject/iw6x-client/releases/latest").done(function(release) {
                 var asset = release.assets[0];
                 $(".download").attr("href", asset.browser_download_url);
                 window.location.replace(asset.browser_download_url);
