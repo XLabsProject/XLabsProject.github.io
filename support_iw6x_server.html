@@ -178,10 +178,7 @@
                                         Known Issues:
                                     </h4>
                                     <ol>
-                                        <li>Currently, <code>g_gametype</code> in server.cfg does not work. Game type must be set in the map rotation. Example: <code>set sv_maprotation "gametype war map mp_prisonbreak map mp_dart</code>. </li>
-                                        <li>The port cannot be set manually. The server will run on the default port of 27016. Should you decide to set up a second server, the server should automatically assign itself the next highest port.</li>
-                                        <li>A bug has been identified which crashes dedicated servers. We suspect it is related to a map change. If you are a server owner, you can try extending your matches to infinity by doing <code>scr_war_timelimit 0; scr_war_scorelimit 0</code>.
-                                            This will prevent TDM matches from ending and should thus be a workaround for the bug (if you are hosting other gamemodes, replace war accordingly). The X Labs team is working on a fix as fast as possible.</li>
+                                        <li>Currently, <code>g_gametype</code> in server.cfg does not work. Game type must be set in the map rotation. Example: <code>set sv_maprotation "gametype war map mp_prisonbreak map mp_dart"</code>. </li>
                                         <li>Other issues may exist that are not covered here. This is an initial release, so be aware that you might experience difficulties running dedicated servers for IW6x.</li>
                                     </ol>
                                     <h4>
