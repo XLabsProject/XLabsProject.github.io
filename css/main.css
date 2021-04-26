@@ -1270,3 +1270,18 @@ footer {
     background-color: #343a40;
     color: #fff;
 }
+
+/* YT CTAs */
+.yt{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.yt iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
