@@ -1008,11 +1008,11 @@ footer {
 }
 
 .patreon a {
-    color: #FF6871;
+    color: #FF424D;
 }
 
 .patreon a:hover {
-    background: #FF6871;
+    background: #FF424D;
 }
 
 .github a {
@@ -1060,14 +1060,14 @@ footer {
 }
 
 .btn.patreon-button {
-    background-color: #FF6871;
-    border: 2px solid #FF6871;
+    background-color: #FF424D;
+    border: 2px solid #FF424D;
 }
 
 .btn.patreon-button:hover {
-    color: #FF6871;
+    color: #FF424D;
     background-color: transparent;
-    border: 2px solid #FF6871;
+    border: 2px solid #FF424D;
 }
 
 .subscribe-box input[type="text"] {
