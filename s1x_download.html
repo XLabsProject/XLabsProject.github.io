@@ -3,7 +3,7 @@
 
 <head>
     <!-- Required meta tags -->
-	<meta http-equiv="refresh" content="0; url=https://master.xlabs.dev:444/s1x/master/Release/build/bin/x64/Release/s1x.exe"/>
+    <!--<meta http-equiv="refresh" content="0; url=https://master.xlabs.dev:444/s1x/master/Release/build/bin/x64/Release/s1x.exe"/>-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords" content="S1x, x labs, S1x download, game modifications, cod clients, opensource, open source, aw client, advanced warfare client, s1">
@@ -127,13 +127,26 @@
                 </div>
             </div>
             <div class="line"></div>
-			<h2>S1x Download</h2>
-            <p>Your download should begin automatically...</p>
-            <p>If it does not start, click the button below.</p>
-            <div>
-                <a href="https://master.xlabs.dev:444/s1x/master/Release/build/bin/x64/Release/s1x.exe" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms"><i class="fa fa-download"></i> Download</a>
-            </div>
-            
+            <h2>S1x Download</h2>
+            <p id="download-block" style="display: none;">Click <a href="https://master.xlabs.dev:444/s1x/master/Release/build/bin/x64/Release/s1x.exe">here</a> to download S1x.</p>
+            <p id="patreon-block" style="display: none;">
+                If you like our projects, consider donating on patreon:<br>
+                <a href="https://www.patreon.com/xlabsproject" class="btn btn-common patreon-button"><i class="fab fa-patreon"></i>&nbsp;&nbsp;&nbsp;Patreon</a>
+            </p>
+            <script>
+                function unlocker() {
+                    setTimeout(function() {
+                        $("#patreon-block").show();
+                        $("#download-block").show();
+                        $("#twitter-block").hide();
+                    }, 1000);
+                    return true;
+                }
+            </script>
+            <p id="twitter-block">
+                Follow us on twitter to unlock the download:<br>
+                <a href="https://twitter.com/XLabsProject" target="_blank" onclick="unlocker()" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms"><i class="fab fa-twitter"></i>&nbsp;&nbsp;&nbsp;Twitter</a>
+            </p>
         </div>
     </section>
     <!-- blog Section End -->
@@ -147,9 +160,9 @@
                         <ul>
                             <li class="twitter"><a href="https://twitter.com/XLabsProject"><i class="fab fa-twitter"></i></a></li>
                             <li class="discord"><a href="https://discord.gg/sKeVmR3"><i class="fab fa-discord"></i></a></li>
-							<li class="youtube"><a href="https://www.youtube.com/channel/UCPA9X79ZsCXMBBCSJ63wA3A?sub_confirmation=1"><i class="fab fa-youtube"></i></a></li>
+                            <li class="youtube"><a href="https://www.youtube.com/channel/UCPA9X79ZsCXMBBCSJ63wA3A?sub_confirmation=1"><i class="fab fa-youtube"></i></a></li>
                             <li class="github"><a href="https://github.com/XLabsProject"><i class="fab fa-github"></i></a></li>
-							<li class="patreon"><a href="https://www.patreon.com/xlabsproject"><i class="fab fa-patreon"></i></a></li>
+                            <li class="patreon"><a href="https://www.patreon.com/xlabsproject"><i class="fab fa-patreon"></i></a></li>
                         </ul>
                     </div>
                     <div class="site-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0.3s">

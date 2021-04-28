@@ -1059,6 +1059,17 @@ footer {
     margin-top: 18px;
 }
 
+.btn.patreon-button {
+    background-color: #FF6871;
+    border: 2px solid #FF6871;
+}
+
+.btn.patreon-button:hover {
+    color: #FF6871;
+    background-color: transparent;
+    border: 2px solid #FF6871;
+}
+
 .subscribe-box input[type="text"] {
     color: #444;
     font-size: 12px;
@@ -1271,17 +1282,20 @@ footer {
     color: #fff;
 }
 
+
 /* YT CTAs */
-.yt{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+
+.yt {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
 }
-.yt iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+
+.yt iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
