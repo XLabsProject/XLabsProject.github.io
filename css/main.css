@@ -1270,7 +1270,7 @@ footer {
 }
 
 
-/*This will work on every browser but Chrome Browser*/
+/* This will work on every browser but Chrome Browser */
 
 .table-fixed thead {
     position: -webkit-sticky;
