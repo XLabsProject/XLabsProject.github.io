@@ -1299,3 +1299,12 @@ footer {
     width: 100%;
     position: absolute;
 }
+
+
+/* Hide certain table values (console_commands) on mobile */
+
+@media only screen and (max-width: 999px) {
+    .table-collapsible {
+        display: none !important;
+    }
+}
