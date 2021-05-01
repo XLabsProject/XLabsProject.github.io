@@ -1262,8 +1262,11 @@ footer {
 /*This will work on every browser but Chrome Browser*/
 
 .table-fixed thead {
-    position: sticky;
     position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -o-sticky;
+    position: -ms-sticky;
+    position: sticky;
     top: 35px;
     z-index: 5;
     background-color: #343a40;
