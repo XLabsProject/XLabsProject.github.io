@@ -138,6 +138,9 @@
                 <a href="#disc_read" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Disc read error</a>
                 <a href="#game_binary" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Failed to read/map game binary</a>
                 <a href="#steam_api64" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">The code execution cannot proceed because steam_api64.dll was not found.</a>
+                <a href="#unknown_compression" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Unknown block compression type: 0</a>
+                <a href="#create_2d_texture" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Create2DTexture(...) failed</a>
+                <a href="#supported_monitor" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Unable to find a supported monitor.</a>
             </div>
             <div class="row">
                 <!-- Support Item Starts -->
@@ -250,6 +253,21 @@
                 </div>
                 <!-- Support Item Wrapper Ends-->
 
+                <!-- Support Item Starts -->
+                <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="blog-item-text">
+                        <p>
+                            <a class="anchor" id="unknown_compression"></a>
+                            Q: Unknown block compression type: 0.
+                        </p>
+                        <img src="https://i.imgur.com/C9SksJ6.png" alt="Unknown block compression type: 0" class="img-fluid">
+                        <p>
+                            A: Verify your game files through Steam, or use the <a href="s1x_repair"> S1x Repair Guide</a>.
+                        </p>
+                    </div>
+                </div>
+                <!-- Support Item Wrapper Ends-->
+
 
                 <!-- Support Item Starts -->
                 <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
@@ -277,6 +295,37 @@
                         <!--<img src="https://i.imgur.com/J7qNtru.png" alt="steam_api64.dll was not found" class="img-fluid">-->
                         <p>
                             A: Make sure you are launching the game with S1x.exe, instead of the s1_mp64_ship.exe.
+                        </p>
+                    </div>
+                </div>
+                <!-- Support Item Wrapper Ends-->
+
+                <!-- Support Item Starts -->
+                <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="blog-item-text">
+                        <p>
+                            <a class="anchor" id="create_2d_texture"></a>
+                            Q: Create2DTexture(...) failed.
+                        </p>
+                        <img src="https://i.imgur.com/TzofwNl.png" alt="Create2DTexture(...) failed" class="img-fluid">
+                        <p>
+                            A: Make sure your GPU drivers are up-to-date. If it still happens, disable shader preload in your video settings.
+                        </p>
+                    </div>
+                </div>
+                <!-- Support Item Wrapper Ends-->
+
+                !-- Support Item Starts -->
+                <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="blog-item-text">
+                        <p>
+                            <a class="anchor" id="supported_monitor"></a>
+                            Q: Unable to find a supported monitor.
+                        </p>
+                        <img src="https://i.imgur.com/WnBLehu.png" alt="Create2DTexture(...) failed" class="img-fluid">
+                        <p>
+                            A: Make sure your GPU meets the <a href="https://support.activision.com/call-of-duty--advanced-warfare/articles/call-of-duty-advanced-warfare-minimum-system-requirements">minimum requirements</a>.
+                            If you're using a laptop make sure S1x uses your dedicated GPU.
                         </p>
                     </div>
                 </div>
