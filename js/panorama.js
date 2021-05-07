@@ -1,4 +1,5 @@
 (function() {
+    return;
     let camera, scene, renderer;
 
     let isUserInteracting = false,
