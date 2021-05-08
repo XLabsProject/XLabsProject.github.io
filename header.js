@@ -57,11 +57,11 @@ document.write('\
 				<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">\
 					<a class="nav-link dropdown-toggle socials" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Socials</a>\
 					<div class="dropdown-menu socials">\
-						<a class="dropdown-item" href="https://twitter.com/XLabsProject">Twitter</a>\
-						<a class="dropdown-item" href="https://discord.gg/sKeVmR3">Discord</a>\
-						<a class="dropdown-item" href="https://youtube.com/channel/UCPA9X79ZsCXMBBCSJ63wA3A?sub_confirmation=1">YouTube</a>\
-						<a class="dropdown-item" href="https://github.com/XLabsProject">GitHub</a>\
-						<a class="dropdown-item" href="https://patreon.com/xlabsproject">Patreon</a>\
+						<a class="dropdown-item" target="_blank" href="https://twitter.com/XLabsProject">Twitter</a>\
+						<a class="dropdown-item" target="_blank" href="https://discord.gg/sKeVmR3">Discord</a>\
+						<a class="dropdown-item" target="_blank" href="https://youtube.com/channel/UCPA9X79ZsCXMBBCSJ63wA3A?sub_confirmation=1">YouTube</a>\
+						<a class="dropdown-item" target="_blank" href="https://github.com/XLabsProject">GitHub</a>\
+						<a class="dropdown-item" target="_blank" href="https://patreon.com/xlabsproject">Patreon</a>\
 					</div>\
 				</li>\
 			</ul>\
